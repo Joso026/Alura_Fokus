@@ -99,7 +99,7 @@ function iniciarOuPausar() {
         zerar()
         return
     }
-
+    if(document.querySelectorAll('.app__section-task-list-item-active').length == 0){return}
     audioPlay.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
     iniciarOuPausarBt.textContent = "Pausar"
